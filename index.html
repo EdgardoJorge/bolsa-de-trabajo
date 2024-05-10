@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <title>Bolsa de Trabajo</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        @import url(styles.css);
+    </style>
+</head>
+
+<body class="overflow-x-hidden bg-slate-400">
+    <header id="ARRIBA">
+        <div class="bg-red-600">
+            <h2 class="py-5 text-2xl font-bold text-center">Bolsas de trabajo en Europa / Remoto</h2>
+        </div>
+    </header>
+    <main>
+        <!-- TABAL DE BUSQUEDA---------- -->
+        <div class="flex justify-center w-screen">
+            <div class="border-2  border-black hover:border-red-500 rounded-xl w-5/12 my-10 items-center flex">
+                <input id="tituloBusqueda" type="text"
+                    class="focus:outline-none py-2 ml-5 w-full font-semibold bg-slate-400"
+                    placeholder="Busca el trabajo en el que estas interesado....">
+                <button id="btnBuscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6 mr-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+
+        <div id="inicio-doble">
+
+        </div>
+        <div id="inicio" class="grid grid-cols-2 grid-rows-3 mx-10">
+
+            <div class="row-start-2 col-start-1 content-center">
+                <h3 class="text-3xl py-5 text-rose-500">¿Buscas trabajo?</h3>
+                <h3 class="text-7xl font-bold">En esta pagina hay puestos de trabajo esperando por ti </h3>
+            </div>
+            <div class="row-start-2 col-start-2">
+                <img src="assets/image.png" alt="" class="rounded-xl ">
+            </div>
+        </div>
+        <!-- lista de resultado lista -->
+        <!-- RESULTADO - TABLA    -->
+        <div id="letras">
+
+        </div>
+        <div id="elementoBuscar" class="flex flex-wrap justify-around py-5">
+
+        </div>
+        <div class="fixed bottom-0 right-0 mb-10 mr-4">
+            <a href="#ARRIBA" class="flecha px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 hover:text-red-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m9 9 6-6m0 0 6 6m-6-6v12a6 6 0 0 1-12 0v-3" />
+                </svg>
+            </a>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
