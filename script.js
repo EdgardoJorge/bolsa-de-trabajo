@@ -61,7 +61,7 @@ const buscarPorTitulo = async () => {
 
 // Borrar resultados de búsqueda
 const botonBorrar = document.getElementById("btnBuscar");
-botonBorrar.addEventListener("click", () => {
+botonBorrar.addEventListener("dblclick", () => {
     document.getElementById("elementoBuscar").innerHTML = "";
     document.getElementById("tituloBusqueda").value = "";
     inicioDoble.innerHTML = ` 
